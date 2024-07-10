@@ -1,0 +1,57 @@
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+selector .scrollmenu::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+
+selector .scrollmenu::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #ddd;
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+selector .scrollmenu::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-family: Roboto;
+  background: white;
+}
+
+selector .scrollmenu a:hover {
+    background: #f3f3f3;
+}
+
+.item {
+    margin: 3px;
+    border-radius: 50px;
+    border: solid 1px #d1d1d1;
+    background-color: #f3f3f3;
+}
+
+selector a {
+    color: #000;
+}
+
+selector img {
+    max-width: 25px;
+    position: relative;
+    float: left;
+}
